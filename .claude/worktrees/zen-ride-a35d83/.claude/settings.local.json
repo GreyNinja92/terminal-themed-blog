@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(cp webfetch-1776837647270-umieds.bin design.tar.gz)",
+      "Bash(tar -tzf design.tar.gz)",
+      "Bash(gunzip -c webfetch-1776837647270-umieds.bin)",
+      "Bash(npx create-next-app@latest . --typescript --app --no-tailwind --eslint --src-dir --import-alias \"@/*\" --no-turbopack)",
+      "Bash(mkdir -p /tmp/saksham-site)",
+      "Read(//tmp/**)",
+      "Bash(npx next *)"
+    ]
+  }
+}
